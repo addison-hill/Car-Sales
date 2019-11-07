@@ -13,8 +13,12 @@ const App = () => {
   };
 
   const buyItem = item => {
-    // dipsatch an action here to add an item
+    return { type: "ADD_FEATURE", payload: item };
   };
+
+  // const saveItem = () => {
+  //   dispatch(buyItem(item));
+  // }
 
   return (
     <div className="boxes">
